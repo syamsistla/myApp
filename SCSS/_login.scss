@@ -1,0 +1,41 @@
+.login-container{
+    width:500px;
+    height: 300px; 
+    margin: 10% auto;
+    background-color: #dddddc;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 4px;
+    .login-maindiv{
+        width: 500px;
+        height: 300px;
+        margin: 0px;
+        padding: 0px;
+        border: 1px;
+        h3{
+            padding-left: 20px;
+            padding-top: 10px;
+            vertical-align: middle;
+        }
+        .login-header{ 
+            width: 500px;
+            height: 40px;
+            background-color: red;
+            margin: 0px; 
+        
+        }
+        .login-contant{
+            width:500px;
+            height: 150px;
+            padding: 20px;
+            
+        }
+        .login-footer{
+            padding-right: 20px;
+            text-align:right;
+        }
+    }
+   
+}
+

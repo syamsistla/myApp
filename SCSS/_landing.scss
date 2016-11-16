@@ -1,0 +1,45 @@
+.landing-mainDiv{
+    width: 500px;
+    height: 300px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: #987563;
+    padding: 20px;
+    margin: 10% auto;
+    background-color: #dddddc;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    
+    h1{
+        font-family:sans-serif;
+        color: #002d30;
+        text-align: center;
+    }
+    
+}
+.landBtn{
+        height: 40px;
+       
+        padding: 10px 20px 10px 20px;
+        border: 1px;
+        text-align: center; 
+        text-decoration: none;
+        border-radius: 2px;
+        &-log{
+            background-color: #2f9254;
+            margin-right: 30px;
+            cursor: pointer;
+            color: #FFFFFF;
+            &:hover{
+                background-color: #457725;
+            }
+        }
+        &-reg{
+            background-color: #547495;
+            cursor: pointer;
+            color: #FFFFFF;
+            &:hover{
+                background-color: #5490c4;
+            }
+        }
+    }

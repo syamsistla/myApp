@@ -1,0 +1,61 @@
+<div ng-controller ="dashboardCtrl" ng-init = "fetchlistData()">
+ 
+    <div class="dashboard-CreatNew">
+    	<button ng-click="open('sm')">Creat New</button>
+    </div>
+    <div ng-repeat=" item in contlist"  class="dashboard-IteamShell">
+		<div class="dashboard-listIteam">
+			<div class="dashboard-rItem" ng-model="actionDiv">
+				<button ng-click="editItem()">Edit</button>
+				<button ng-click="deleteItem()">Delete</button>
+			</div>
+			<div class="dashboard-lItem" ng-click="goToContactDetails()">
+				<p class="dashboard-lItemName">{{ item.firstname + " " + item.lastname }}</p> 
+				<p class="dashboard-lItemtxt">{{ item.phoneno}}</p>
+				<p class="dashboard-lItemtxt">{{ item.email}}</p>
+			</div>	
+		</div>
+    
+    </div>
+    
+    <script type="text/ng-template" id="createNew.html">
+        <div>
+        <div class="modal-header">
+            <h3 class="modal-title"> Creat New</h3>
+        </div>
+        <div class="modal-body dashboard-popup">
+           <p>FistName: <br><input type="text" ng-model="Fname"></p>
+           <p>LastName: <br><input type="text" ng-model="Lname"></p>
+           <p>E-Mail: <br><input type="email" ng-model="email"></p>
+           <p>MobileNo:<br> <input type="text" ng-model="mno"></p>
+           <p>Address: <br><textarea ng-model="address"></textarea></p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="ok()">Creat</button>
+            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        </div>
+        </div>
+    </script>
+    
+    <script type="text/ng-template" id="editPopup.html">
+        <div>
+        <div class="modal-header">
+            <h3 class="modal-title"> Edit</h3>
+        </div>
+        <div class="modal-body dashboard-popup">
+           <p>FistName: <br><input type="text" ng-model="eFname"></p>
+           <p>LastName: <br><input type="text" ng-model="eLname"></p>
+           <p>E-Mail: <br><input type="email" ng-model="eEmail"></p>
+           <p>MobileNo:<br> <input type="text" ng-model="eMno"></p>
+           <p>Address: <br><textarea ng-model="eAddress"></textarea></p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="ok()">Save</button>
+            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        </div>
+        </div>
+    </script>
+    
+   
+    
+</div>
